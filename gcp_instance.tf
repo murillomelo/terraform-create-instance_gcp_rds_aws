@@ -39,7 +39,7 @@ resource "google_compute_instance" "instance" {
     connection {
       type        = "ssh"
       user        = "murillomelo"
-      private_key = "${file("/Users/murillomelo/.ssh/id_rsa")}"
+      private_key = "${file("your_id_rsa")}"
       agent       = true
       timeout     = "1m"
   }
